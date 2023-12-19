@@ -1,3 +1,22 @@
+@font-face {
+  font-family: rubik;
+  src: url(./Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+:root{
+  font-family: rubik;
+  font-size: 16px;
+  color: red;
+}
+body {
+  margin: 0;
+}
+
+.question > * {
+  display: block;
+  margin: 1rem auto;
+}
+
 .layout {
   box-sizing: border-box;
   width: 100vw;
@@ -22,7 +41,9 @@
   border: 5px solid black;
   padding: 20px;
   border-radius: 10px;
+  font-size: 1.4rem;
 }
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -96,4 +117,40 @@ input:checked + .slider:before {
 }
 .payment > * {
   margin-top: 1rem;
+}
+.input-group{
+  --ig-top: .7rem;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.input-group label{
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  font-size: 1.1rem;
+}
+.input-group input, .input-group button{
+  padding: 1rem;
+  padding-top:  var(--ig-top);
+  padding-bottom:  var(--ig-top);
+  border: none;
+}
+.input-group input{
+  border-top-left-radius: 5px;;
+  border-bottom-left-radius: 5px;;
+}
+.input-group button{
+  background-color: rgba(0, 0, 0, 0.198);
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.input-group button:hover{
+  box-shadow: 5px 5px 40px 5px #0ff;
+  cursor: pointer;
+}
+.input-group input:hover{
+  cursor: pointer;
 }

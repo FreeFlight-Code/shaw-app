@@ -8,12 +8,10 @@ function Stripe({form}){
   const [paymentOption, set_paymentOption] = useState(0)
   const paymentOptions = ['Year', 'Month'];
 
-  function handleToggle(event){
+  function handleToggle(){
     const isYearly = !paymentOption;
     if (isYearly) set_paymentOption(1);
     else set_paymentOption(0);
-//     const {target: {value} = {}} = event;
-// console.log(value)
   }
     return (
       <div className="payment">

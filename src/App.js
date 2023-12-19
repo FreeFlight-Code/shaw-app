@@ -1,6 +1,6 @@
 import Form from "./components/Form";
 import Layout from "./components/Layout";
-import "./App.css";
+import "./style/App.css";
 
 function App() {
   return (

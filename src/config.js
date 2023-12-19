@@ -14,8 +14,8 @@ const products = [
 ];
 
 const questions = [
-  { queryId: "numEmployees", question: "How many employees do you have?" },
-  { queryId: "numClaims", question: "How many unemployment claims do you expect a year? Put 0 if you want to use the industry average." },
+  { queryId: "numEmployees", question: "How many employees do you have?", label: "# of Employees" },
+  { queryId: "numClaims", question: "How many unemployment claims do you expect a year? Put 0 if you want to use the industry average.", label: "# of Claims"},
 ];
 
 const config = {

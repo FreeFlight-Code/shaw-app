@@ -16,7 +16,7 @@ function Questions(props) {
 
 
   function Question(props) {
-    const { queryId, question, id, value = "", setForm, form } = props;
+    const { queryId, question, id, value = "", setForm, form, label } = props;
     const [inputValue, set_inputValue] = useState(value);
   
     function completeQuestion (index, value){
@@ -38,11 +38,14 @@ function Questions(props) {
 
     return (
       <div className='question'>
-        <label htmlFor={queryId}>{question}</label>
-        <input id={queryId} onChange={handleChange} value={inputValue}/>
-        <button disabled={!inputValue} onClick={onSubmit}>
-          submit
-        </button>
+        <div>{question}</div>
+        <div className="input-group">
+          <label htmlFor={queryId}>{label}</label>
+          <input id={queryId} onChange={handleChange} value={inputValue}/>
+          <button disabled={!inputValue} onClick={onSubmit}>
+            next
+          </button>
+        </div>
       </div>
     );
   }
