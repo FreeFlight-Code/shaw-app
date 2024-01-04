@@ -31,20 +31,21 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
+  /* display: flex;
+  justify-content: center; */
+  padding: 20vw;
 }
 .page {
-  min-width: 200px;
-  width: 70%;
+  /* min-width: 200px; */
+  width: 100%;
   height: min-content;
-  background-color: rgba(223, 218, 212, 0.472);
+  background-color: rgba(223, 218, 212, 0.903);
   color: black;
   border: 5px solid black;
   padding: 3rem;
   border-radius: 10px;
   font-size: 1.4rem;
+  box-sizing: border-box;
 }
 
 /* The switch - the box around the slider */
