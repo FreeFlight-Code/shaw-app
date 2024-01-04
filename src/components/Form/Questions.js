@@ -41,8 +41,8 @@ function Questions(props) {
         <div>{question}</div>
         <div className="input-group">
           <label htmlFor={queryId}>{label}</label>
-          <input id={queryId} onChange={handleChange} value={inputValue}/>
-          <button disabled={!inputValue} onClick={onSubmit}>
+          <input id={queryId} onChange={handleChange} value={inputValue} tabindex="0"/>
+          <button disabled={!inputValue} onClick={onSubmit} tabindex="0">
             next
           </button>
         </div>

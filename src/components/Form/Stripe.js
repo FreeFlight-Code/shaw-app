@@ -13,6 +13,9 @@ function Stripe({form}){
     if (isYearly) set_paymentOption(1);
     else set_paymentOption(0);
   }
+  function handlePurchase(){
+    alert('Purchased!')
+  }
     return (
       <div className="payment">
         <h3>STRIPE</h3>
@@ -30,6 +33,7 @@ function Stripe({form}){
         <div>
           <span>Cost per {paymentOptions[paymentOption]}: </span><span>{[yearly, monthly][paymentOption]}</span>
         </div>
+        <button onClick={handlePurchase}>Purchase</button>
       </div>
     )
   }
