@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shaw-app/static/css/main.46fd5468.css",
+    "main.js": "/shaw-app/static/js/main.2e1e63df.js",
+    "static/js/787.49683aa3.chunk.js": "/shaw-app/static/js/787.49683aa3.chunk.js",
+    "static/media/Rubik-VariableFont_wght.ttf": "/shaw-app/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
+    "index.html": "/shaw-app/index.html",
+    "main.46fd5468.css.map": "/shaw-app/static/css/main.46fd5468.css.map",
+    "main.2e1e63df.js.map": "/shaw-app/static/js/main.2e1e63df.js.map",
+    "787.49683aa3.chunk.js.map": "/shaw-app/static/js/787.49683aa3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46fd5468.css",
+    "static/js/main.2e1e63df.js"
+  ]
+}
